@@ -10,6 +10,9 @@ import Navbar from "./components/navbar/Navbar.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Menu from "./components/menu/Menu.jsx";
 import Login from "./pages/login/Login.jsx";
+import TermsOfUse from "./pages/terms/TermsOfUse.jsx";
+import PrivacyPolicy from "./pages/policy/PrivacyPolicy.jsx";
+import Licensing from "./pages/licensing/Licensing.jsx";
 import "./styles/global.css"
 
 function App() {
@@ -51,6 +54,18 @@ function App() {
                   path: "login",
                   element: <Login />,
               },
+              {
+                  path: "terms-of-use",
+                  element: <TermsOfUse />
+              },
+              {
+                  path: "privacy-policy",
+                  element: <PrivacyPolicy />
+              },
+              {
+                  path: "licensing",
+                  element: <Licensing />
+              }
           ]
       },
 

@@ -1,24 +1,16 @@
-import React from 'react';
 import './Footer.css';
+import {Link} from "react-router-dom";
 
 function Footer() {
     return (
-        <footer className="footer">
-            <div className="footer-content">
-                <p>&copy; 2023 Your Company. All rights reserved.</p>
-                <ul className="footer-nav">
-                    <li className="footer-item">
-                        <a href="/privacy">Privacy Policy</a>
-                    </li>
-                    <li className="footer-item">
-                        <a href="/terms">Terms of Service</a>
-                    </li>
-                    <li className="footer-item">
-                        <a href="/contact">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+        <div className="footer">
+                <span>&copy; 2024 Codify_. All rights reserved.</span>
+                <span className="footer-policy">
+                    <Link to="/terms-of-use">Terms of Use</Link>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
+                    <Link to="/licensing">Licensing</Link>
+               </span>
+        </div>
     );
 }
 

@@ -1,6 +1,6 @@
-import './Home.css';
+import './PrivacyPolicy.css';
 
-function Home() {
+function PrivacyPolicy() {
     return (
         <div className="admin-home">
             <h1>Admin Home Page</h1>
@@ -9,4 +9,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default PrivacyPolicy;

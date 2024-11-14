@@ -4,14 +4,17 @@ import searchIcon from '../../assets/search.svg';
 import notificationIcon from '../../assets/notification.svg';
 import profileIcon from '../../assets/demo-avatar.svg';
 import {useState} from "react";
+import {Link} from "react-router-dom";
 function Navbar() {
     const [searchText, setSearchText] = useState('');
     return (
         <nav className="navbar">
+            <Link to="/">
             <div className="logo">
                 <img src={image} alt=""/>
                 <span style={{fontWeight: 'bold', fontSize: 30, marginTop: -40}}>Codify_</span>
             </div>
+            </Link>
             <div className="search-bar">
                 <img
                     src={searchIcon}
