@@ -10,4 +10,14 @@
         gap: 20px;
         cursor: pointer;
     }
+
+    span{
+        &:first-child{
+            font-weight: bold;
+        }
+
+        &:last-child{
+            font-size: 14px;
+        }
+    }
 }
