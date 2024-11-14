@@ -1,3 +1,76 @@
-.navbar{
+@keyframes typing {
+    100% { width: 0; } 50% { width: 8ch; }
+}
 
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #61dafb; }
+}
+
+.logo span {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    border-right: 0.15em solid white;
+    animation: typing 4.5s steps(12) infinite, blink-caret 1s step-end infinite;
+}
+.navbar{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+
+    .search-bar img {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    .search-bar img.disabled {
+        opacity: 0.5; /* Make the icon appear disabled */
+        pointer-events: none; /* Disable click events */
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 8px;
+        margin: 0 300px 40px auto; /* Adjust margin as needed */
+    }
+
+    .search-bar input {
+        border: none;
+        outline: none;
+        padding: 6px;
+        font-size: 18px;
+        width: 700px; /* Adjust width as needed */
+    }
+
+    .notification img {
+        width: 50px; /* Adjust the width as needed */
+        height: 40px; /* Adjust the height as needed */
+        cursor: pointer;
+        margin: 0 20px 40px auto;
+    }
+
+    .profile img {
+        width: 50px; /* Adjust the width as needed */
+        height: 60px; /* Adjust the height as needed */
+        cursor: pointer;
+        margin: 0 20px 40px auto;
+    }
 }

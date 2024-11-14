@@ -31,7 +31,8 @@ a {
 }
 
 .navbar .logo img {
-    margin-top: 20px;
-    width: 60px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+        width: 60px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+        margin: -10px 10px 40px auto; /* Center the image and add margin below */
 }
